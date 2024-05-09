@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: "Salsa", cursive;
+  background-color: #f99501;
+}
+
+.jhalar {
+  width: 220px;
+  margin-bottom: -100px;
+}
+
+.hero-section {
+  background-image: url(/images/orange-backdrop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paragraph-and-audio {
+  margin-left: 15rem;
+}
+.hero-section p {
+  font-size: 46px;
+  max-width: 587px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #fbd8a4;
+}
+
+.audio-container {
+  background-color: #fbd8a4;
+  max-width: 500px;
+  border-radius: 45.92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.lakshmi-ganesha {
+  /* my code 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem; */
+  background-color: #f99501;
+  padding-block: 1em;
+  padding-inline: 1rem;
+}
+
+.lakshmi-ganesha img {
+  width: 100%;
+  max-width: 1364.87px;
+  display: block;
+  margin-inline: auto;
+}
+
+.line-break {
+  display: flex;
+  align-items: center;
+  max-width: 1010px;
+  margin-top: 15px;
+  gap: 11px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  /* video solution
+   display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-bottom: 2rem; */
+}
+
+.line-break .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fbd8a4;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.line-break .line {
+  background-color: #fbd8a4;
+  width: 468px;
+  border-radius: 20px;
+  height: 4px;
+  /* video solution
+   height: 2px;
+  background-color: #fbd8a4;
+  width: 468px; */
+}
+
+.lakshmi-ganesha p {
+  font-size: 70px;
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 17.5px;
+  font-family: "style script", cursive;
+  text-align: center;
+}
+
+.diwali-goal-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diwali-info .my-diwali-goal {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* max-width: 885px; */
+  max-width: 540px;
+  /* height: 783px; */
+  /* margin: 108px 0 0 256px; */
+  border-radius: 23px;
+  background-color: white;
+}
+.diwali-info .my-diwali-goal p {
+  /* font-size: 46px; */
+  font-size: 2rem;
+  /* width: 667px; */
+  padding-inline: 94px;
+  /* margin: 99.05px 93.14px 81.04px 93.03px; */
+}
+
+.diwali-info img {
+  width: 260px;
+  /* margin-left: -157px; */
+  margin-left: -5rem;
+  /* margin-top: -10px; */
+}
+
+.last-section {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.last-section .image-container {
+  background-color: white;
+  max-width: 1280px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.last-section .image-container img {
+  width: 46%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.last-section .salutations {
+  font-size: 24px;
+}
+
+.last-section .gratitude {
+  font-size: 70px;
+  font-family: "style script", cursive;
+  text-align: justify;
+}
+
+.made-by {
+  text-align: right;
+}
+
+@media (max-width: 830px) {
+  .deepak .second-deepak {
+    display: none;
+  }
+  .deepak .first-deepak {
+    display: block;
+    margin-left: auto;
+  }
+  .paragraph-and-audio {
+    margin-left: 1rem;
+  }
+  .jhalar {
+    margin-bottom: 0;
+  }
+  .music-title {
+    display: none;
+  }
+  .music-visualizer {
+    display: none;
+  }
+  .audio-container {
+    justify-content: space-evenly;
+    max-width: max-content;
+  }
+  .hero-section p {
+    font-size: 32px;
+  }
+  .lakshmi-ganesha p {
+    font-size: 32px;
+  }
+
+  .diwali-info .my-diwali-goal {
+    max-width: 450px;
+    border-radius: 23px;
+    background-color: white;
+  }
+  .diwali-info img {
+    width: 150px;
+    margin-left: -3rem;
+  }
+
+  .diwali-info .my-diwali-goal p {
+    font-size: 1.5rem;
+    padding-inline: 94px;
+  }
+  .last-section .gratitude {
+    font-size: 32px;
+  }
+}
+@media (max-width: 550px) {
+  .hero-section p {
+    font-size: 28px;
+  }
+  .lakshmi-ganesha p {
+    font-size: 28px;
+  }
+  .diwali-info img {
+    width: 120px;
+    margin-left: -2rem;
+  }
+  .diwali-info .my-diwali-goal {
+    max-width: 340px;
+    border-radius: 23px;
+    background-color: white;
+  }
+  .diwali-info .my-diwali-goal p {
+    /* font-size: 46px; */
+    font-size: 1rem;
+    /* width: 667px; */
+    padding-inline: 94px;
+    /* margin: 99.05px 93.14px 81.04px 93.03px; */
+  }
+  .last-section .gratitude {
+    font-size: 28px;
+  }
+}
+@media (max-width: 422px) {
+  .first-deepak {
+    width: 100%;
+  }
+}
