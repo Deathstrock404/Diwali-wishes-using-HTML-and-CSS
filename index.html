@@ -19,7 +19,7 @@
       <img src="/images/jhalar.png" alt="">
     </div>
     <div class="paragraph-and-audio">
-      <p>Hi,<br> You mean the world to me... So this Diwali, I made something for you!</p>
+      <p>Hi, <span id="receiver"></span><br> You mean the world to me... So this Diwali, I made something for you!</p>
       <div class="audio-container">
         <img src="/icons/music-icon.svg" alt="music-icon">
         <span class="music-title">&nbsp;&nbsp; Soulful Music &nbsp;&nbsp;</span>
@@ -77,8 +77,15 @@
       <p class="salutations">Happy Diwali and,</p>
       <p class="gratitude">Thank You For Everything...</p>
     </div>
-    <p class="made-by">Made with 💜 By Kamaljot Singh</p>
+    <p class="made-by">Made with 💜 By <span id="sender"></span></p>
   </section>
+  <script>
+
+    const receiverName = document.querySelector("#receiver");
+    const senderName = document.querySelector("#sender");
+    receiverName.innerText = new URLSearchParams(location.search).get("receiver");
+    senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Kamaljot Singh';
+  </script>
 </body>
 
 </html>
